@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 입출력 예제</title>
+</head>
+<body>
+       
+    <script>
+        // "인적사항을 차례대로 입력해주시기 바랍니다" 알림창
+        // 입력문 이용해서 이름, 나이 입력
+        // 이대로 진행 할 것인지 확인           -->??
+        // 입력받은 이름, 나이 정보를 홈페이지와 콘솔에 출력되게끔 하기
+
+        alert("인적사항을 차례대로 입력해주시기 바랍니다");
+
+        // 이름 string, 나이 number
+        let input_age=prompt("나이", 0);
+        input_age=Number(input_age);    //age타입을 number로 형변환
+        let input_name=prompt("이름", "none");
+
+        let bool=confirm("이대로 진행하시겠습니까?");
+        // 확인 : true 취소 : false 
+        if(bool===true){
+            // 콘솔창 줄바꿈 \n
+            console.log("이름 : "+input_name+ "\n"+"나이 : "+input_age );
+       
+            console.log("이름 : "+input_name);
+            console.log("나이 : "+input_age);
+
+            // 홈페이지 줄바꿈 "<br>""
+            document.write("이름 : "+input_name+ "<br>"+"나이 : "+input_age );
+        }
+        else {
+            console.log("취소 요청을 하였습니다.");
+            document.write("다시 실행해주시길 바랍니다");
+        }     
+
+</script>
+</body>
+</html>

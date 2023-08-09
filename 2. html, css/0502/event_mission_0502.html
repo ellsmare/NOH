@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    이벤트 연습
+    - 이름, 성별, 나이에 대햐여 입력받기
+    input태그 작성하고 거기에 입력하는 식으로 적용(prompt 금지)
+    (input태그에 id적용하여, js쪽으로 땡겨오는게 가능)
+
+    cf) 입력값 땡겨올 때, document.getElementById("id").value 사용 권장
+    )
+
+    - 버튼을 누르면 다음 이벤트를 수행하라
+    "입력 감사합니다" 라는 알림창 출력
+    버튼 아래로 선을 긋고 <hr>
+    입력한 이름, 성별, 나이를 순차적으로 출력하기 -->
+    
+        <lavel>이름 : </lavel>
+        <input id="name" type="text"> 
+        <br>
+        <lavel>성별 : </lavel>
+        <input id="gender" type="text">
+        <br>
+        <lavel>나이 : </lavel>
+        <input id="age" type="text">
+        <br>
+        
+        <input type="button" id="btt" value="전송">        
+
+    <script>
+        let button=document.getElementById("btt");
+        button.addEventListener("click", warning);
+       
+
+        function warning(){
+            alert("입력 갑사합니다.");
+
+            let name=document.getElementById("name").value;
+            let gender=document.getElementById("gender").value;
+            let age=document.getElementById("age").value;
+
+            document.getElementById("text").innerHTML=
+            `<hr>
+            이름 : ${name}<br>
+            성별 : ${gender}<br>
+            나이 : ${age}<br>`;
+        }     
+
+    </script>
+</body>
+</html>

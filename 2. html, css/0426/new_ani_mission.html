@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 전화 아이콘, 수신거절 아이콘 하나씩 저장하고 시작 */
+    /* 
+    이미지 나란히 표현
+    "커졌다 작아졌다 무한 반복" 하는 애니메이션 적용
+    * 애니메이션과 transition 같이 설정
+    마우스 위에 있을 때, 조금 더 커지게 설정 -transition 적용
+    (이미지 아래로 버튼을 위치)
+    버튼을 누르면 아래의 문구만 있는 html 파일로 각각 이동하게끔 설정
+    -"전화를 받았습니다"
+    -"전화를 거절하였습니다."
+    */
+    
+        body {
+            text-align: center;
+        }
+    
+        hr {
+            width: 20%;
+        }
+    
+        img {
+            /* 적용할 애니메이션 이름 */
+            animation-name: repeat;
+            /* 애니메이션 수행시간 */
+            animation-duration: 3s;
+            /* 무한반복 */
+            animation-iteration-count: infinite; 
+        }    
+        
+        input {
+            width: 100px;
+            height: 30px;
+        }
+        
+        form {
+            height: 300px;
+            width: 200px;
+        }
+
+        form#call_ok {
+            float: left;
+            margin-left: 30%;                 
+            display: inline-block;      
+            background-position: center;   
+        }    
+    
+        form#call_no { 
+            float: right;    
+            margin-right: 30%;    
+            display: inline-block;
+            background-position: center; 
+        }    
+    
+        @keyframes repeat {
+            0%   {height: 150px; width: 150px;}           
+            50%  {height: 200px; width: 200px;}           
+            100% {height: 150px; width: 150px;}
+        }
+    
+    </style>
+    <body>
+        <h2>전화가 왔습니다. 받으시겠습니까?</h2>
+        <br><hr><br>
+                           
+        <form action="call_ok.html" id="call_ok">
+            <input type="submit" value="전화받기"><br><br>
+            <img src="call.PNG">
+        </form>              
+          
+        <form action="call_no.html" id="call_no"> 
+            <input type="submit" value="전화거절"><br><br>    
+            <img src="call_no.PNG">             
+        </form>      
+                   
+        
+    </body>
+    </html>

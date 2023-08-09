@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style> 
+
+    p#ani_change {
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        border: 2px solid green;
+        text-align: center;
+        font-size: 50px;
+
+        /* 애니메이션 적용 */
+        animation-name: change;
+        animation-duration: 2s;
+
+        /* 애니메이션 추가 속성  */       
+        animation-iteration-count: infinite; /* 반복횟수 */
+        /* 딜레이 지연 :: 태그의 기본값을 보여주는 시간*/
+        animation-delay: 1s;                 
+    }
+
+    p#ani_dynamic {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 238, 47);
+        border: 2px solid rgb(57, 209, 1);
+        text-align: center;
+        font-size: 50px;
+
+        /* 애니메이션 적용 */
+        animation-name: dynamic;
+        animation-duration: 2s;
+
+        /* 애니메이션 추가 속성  */       
+        animation-iteration-count: infinite; /* 반복횟수 */
+        /* 딜레이 지연 :: 태그의 기본값을 보여주는 시간*/
+        animation-delay: 1s;                 
+    }
+
+    /*트랜지션 :: 속성값을 이동/전환  */
+    
+    /*애니메이션 :: 
+    수행할 동작들을 묶어서 정의 후 사용 
+    애니메이션의 끝부분 속성값과 애니메이션 적용 후 태그의 기본값과 속성값이 동일해야 자연스러움 
+    */
+    
+    @keyframes change {
+        /* from :: 시작 상태의 속성값 */
+        from{width: 400px; height: 400px; border: none;  background-color: aquamarine;}
+        /* to :: 끝 상태의 속성값 */
+        to{width: 200px; height: 200px; border: 3px;}
+    }
+
+    @keyframes dynamic {
+        /* 작은정사각형-세로긴-큰정사각-가로긴-작은정 */
+        0% {width: 200px; height: 200px;}
+        25% {width: 200px; height: 400px;}
+        50% {width: 400px; height: 400px;}
+        75% {width: 400px; height: 200px;}
+        100% {width: 200px; height: 200px;}
+    }
+
+</style>
+<body>   
+    <!-- 반응형 웹 -->
+    <div>
+        <p id="ani_change">사각형</p>
+    </div>
+
+    <div>
+        <p id="ani_dynamic">사각형</p>
+    </div>
+
+
+
+</body>
+</html>

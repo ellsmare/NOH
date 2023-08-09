@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css" >
+</head>
+<body>
+    <h2> 회원가입을 환영합니다</h2> <br><br>
+   
+    <h3> 계정 만들기 </h3>
+    <hr>
+    <br><br>
+
+        <form>
+        <div> 
+            <label for="uid">희망 아이디</label>
+            <p id="help">다른 유저와 겹치지 않도록 입력해주세요.(2~15자)</p>          
+            <input id="uid" type="text" autofocus placeholder="별명 (2~15자)" >
+            <input type="button" value="확인" id="id_check" name="id_check">                    
+        </div> <br><br>
+        
+        <div>              
+            <label>비밀번호</label>
+            <p id="help">영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
+            <input name="password" type="text" required placeholder="비밀번호">
+            <input type="button" value="확인" id="pw_check" name="pw_check">        
+        </div><br><br>
+
+        <div>
+            <label>비밀번호 확인</label><br>
+            <input name="password" type="text" required placeholder="비밀번호 확인" > 
+            <input type="button" value="확인" id="pw_check" name="pw_check"> 
+        </div><br><br>                   
+
+    </form> <br><br>
+
+    <h3> 개인정보 </h3>
+    <hr>
+    <br><br>
+
+    <form>        
+        <div> 
+            <label>사용자 이름</label>   <br>                           
+            <input name="name" type="text"  placeholder="이름" >
+        </div><br><br>
+        
+        <div>
+            <label>성별</label> <br>
+            <input id="male" type="radio" name="gender"><label>남자</label>
+            <input id="female" type="radio" name="gender"><label>여자</label>
+        </div> <br><br> 
+
+        <div>
+            <label>생년월일</label> <br>
+            <input type="date" name="date" placeholder="생년월일">
+        </div> <br><br> 
+    
+        <div>
+            <label>국적</label>  <br>
+            <input type="text" name="contry"  placeholder="국적" >
+        </div><br><br> 
+        
+         <div>
+            <label for="umail">이메일</label> <br>
+            <input type="text" id="first-mail" name="e=mail">
+            @
+            <select id="sec_email" name="sec-mail"> 
+                <option value="name">naver.com</option>
+                <option value="daum">daum.com</option>
+                <option value="google">google.com</option>
+            </select> <br><br>
+
+            <div>
+                <label>주소</label>  <br>
+                <input type="text" name="address"  placeholder="address" >
+            </div>            
+         </div>         
+    </form><br><br> 
+
+    <h3> 이벤트 </h3>
+    <hr>
+    <br><br>
+
+    <form>        
+        <div> 
+            <label>가입경로</label>   <br>                           
+            <input type="checkbox" id="route" name="route" value="banner" >
+            <label for="banner">현수막</label>
+            <input type="checkbox" id="route" name="route" value="visit" >
+            <label for="visit">기관 방문</label>
+            <input type="checkbox" id="route" name="route" value="tel" >
+            <label for="tel">전화</label>
+            <input type="checkbox" id="route" name="route" value="search" >
+            <label for="search">지인추천</label>
+        </div><br><br>
+
+    </form>
+    
+
+    </form>
+
+
+</body>
+</html>

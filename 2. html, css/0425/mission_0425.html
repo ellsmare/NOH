@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    
+    <title>미니 피아노</title>
+</head>
+
+<!-- 계이름에 따라 페이지 구성 전환효과 
+    (반올림, 반내림은 고려하지 않는다)
+
+기본값 
+background-color:: 흰색
+border :: 검은색
+
+hover
+도 빨/레 주/미 노/파 초/솔 파/라 하/시 보/도 빨
+
+active ->hover에서 색상유지
+font-size 키우기
+color :: 흰색
+
+-->
+
+<style>
+    h2{       
+        text-align: center;
+    }
+
+    hr{
+        width: 30%;
+    }
+
+    p{
+        /* 크기조절, 나란한 배치 가능 :: inline-block */
+        display: inline-block;
+        width: 100px;
+        height:300px;
+        font-size: 30px;    
+        background-color: white;
+        border: 3px solid black;        
+        text-align: center;
+                     
+        /* 모션 :: 2초동안 배경컬러 변경 적용 */
+        transition: background-color, font-size 1s, color 1s, width 1s, height 1s;      
+        transition-duration: 2s;
+        transition-delay: 5s;
+    }
+
+    /* 마우스 클릭시, 스타일 설정  */
+    p:active{         
+        color: white;        
+        font-size: 50px; 
+        width: 120px;
+        height: 360px;
+    }
+
+    /* 마우스 위에 있을때, 스타일 설정 :: hover */
+    p#도:hover {background-color: red; }
+    p#레:hover {background-color: orange; }
+    p#미:hover {background-color: yellow; }
+    p#파:hover {background-color: green; }
+    p#솔:hover {background-color: blue; }
+    p#라:hover {background-color: skyblue; }
+    p#시:hover {background-color: violet; }
+
+   div {
+    margin: 0  auto;
+    text-align: center;
+   }
+
+</style>
+
+
+<body>
+
+    <h2>건반을 눌러보세요</h2>
+    <hr><br>
+
+    <div>
+        <p id="도">도</p>
+        <p id="레">레</p>
+        <p id="미">미</p>
+        <p id="파">파</p>
+        <p id="솔">솔</p>
+        <p id="라">라</p>
+        <p id="시">시</p> 
+        <p id="도">도</p>     
+    </div>
+
+    
+    
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+/* 전화 아이콘, 수신거절 아이콘 하나씩 저장하고 시작 */
+/* 
+이미지 나란히 표현
+"커졌다 작아졌다 무한 반복" 하는 애니메이션 적용
+* 애니메이션과 transition 같이 설정
+마우스 위에 있을 때, 조금 더 커지게 설정 -transition 적용
+(이미지 아래로 버튼을 위치)
+버튼을 누르면 아래의 문구만 있는 html 파일로 각각 이동하게끔 설정
+-"전화를 받았습니다"
+-"전화를 거절하였습니다."
+*/
+
+    *{ text-align: center;}
+
+    hr {width: 20%; }
+
+    p {
+        animation-name: repeat;
+        animation-duration: 5s;
+        animation-iteration-count: infinite; 
+    }
+
+    div#float_left {
+        float:left ;
+        margin-left: 25%;
+    }
+
+    div#float_right {
+        float:right ;
+        margin-right: 25%;
+    }
+
+    input {
+        width: 100px;
+        height: 30px;        
+    }
+
+    p#call_ok {        
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url('call.PNG');
+        background-position: center;   
+    }
+
+
+    p#call_no {       
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url('call_no.PNG');         
+        background-position: center; 
+    }
+
+
+    @keyframes repeat {
+        0%   {height: 50px; width: 50px;}
+        25%  {height: 100px; width: 100px;}
+        50%  {height: 150px; width: 150px;}
+        75%  {height: 100px; width: 100px;}
+        100% {height: 50px; width: 50px;}
+    }
+
+</style>
+<body>
+    <h2>전화가 왔습니다. 받으시겠습니까?</h2>
+    <br><hr><br>
+    <div id="float_left">  
+        <form action="call_ok.html"> 
+            <input type="submit" value="전화받기">
+        </form>     
+        <p id="call_ok"></p>
+        
+        
+    </div>
+
+    <div id="float_right">
+        <form action="call_no.html"> 
+            <input type="submit" value="전화거절">
+        </form>
+        <p id="call_no"></p>       
+        
+    </div>
+    
+ 
+
+
+
+
+    
+    
+</body>
+</html>

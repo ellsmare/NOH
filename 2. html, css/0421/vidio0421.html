@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>비디오 불러오기-파일</p>
+    <video width="500" height="300" controls >
+    <!-- <video>태그 :: <source> 를 넣어 주어야 함  -->
+    <!-- controls :: 재생바 추가하는 기능 -->
+    <!-- autoplay :: 자동재생 -->
+    
+        <source src="IMG_0305.mov" type="video/mp4" >
+        <!-- <source> 태그 -->
+        <!-- type :: 주어진 동영상을 type에 명시된 확장자로 제공  -->
+        영상이 안나올때 해당 글이 표시됨     
+    </video>
+
+    <video width="500" height="300" autoplay muted >
+    <!-- autoplay muted :: 음소거 자동재생 -->
+        <source src="IMG_0305.mov" type="video/mp4" >           
+    </video>
+
+    <br>
+    <p> 유튜브 영상 </p>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/13SzQW-ZEnQ" ></iframe>
+    
+    <!-- <iframe> :: 유튜브 영상 끌어오는 태그  -->    
+        
+    <iframe width="560" height="315" 
+       src="https://www.youtube.com/embed/13SzQW-ZEnQ?autoplay=1&mute=1">
+    </iframe>
+    <!-- autoplay=1&mute=1 :: 음소거 자동재생 -->
+</body>
+</html>

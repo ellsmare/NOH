@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- form태그 :: 사용자 입력을 위한 (공간을 만들어주는)태그 -->
+    <!-- form(속성) :: action, method -->
+    <!-- form(action) :: 입력값들을 "어디로" 전송할지 지정하는 속성 -->
+       <!-- ex) 서버 연결시 url링크, php, html의 여러 파일 중 이동-submit -->
+    <!-- form(method) :: get, post 둘 중 하나만 작성할 수 있는 속성-->
+        <!-- get() :: 서버가 클라이언트로부터 정보 요청 -->
+        <!-- post() :: 서버에 정보를 보낼 때 사용 -->
+
+    <p> form(action) 예시 </p>
+
+<!-- 드롭다운 :: 미리 제시된 선택지를 사용자가 선택할 수 있게끔 함 -->
+<!-- select, option 태그를 사용 -->
+    <p>이메일을 입력하세요</p>
+    <label for="email"> 이메일 </label>
+    <input type="text" id="first_email" style="width: 100px;">
+    @
+    <select id="sec_email" name="sec_email">
+    
+    <option value="naver"> naver.com </option>
+    <option value="daum"> daum.com </option>
+    <option value="google"> google.com </option>
+
+    </select>
+<br>
+  <!-- input 태그 유형 ::-->
+  <p>input 태그 종류는 아래와 같습니다.</p>
+    
+
+  <label>버튼 만들기 - 2가지 방법</label><br>
+  <button> 나는 버튼입니다</button><br>
+  <input type="button" value="나는 버튼 입니다."><br>
+
+  <!-- input태그 :: 날짜 지정해서 값을 넣는 -->
+  
+  <label>날짜지정</label><br>
+  <input type="date"><br>
+
+  <!-- input태구 :: 색상 지정하여 값을 넣는 -->
+  <label>색상지정</label><br>
+  <input type="color"><br>  
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- comp 으로 불러오는 기본 정보들-->
+<Context>
+    <!--닫기 표현식 2가지-->
+    <Resource name="jdbc/MariaDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="kb"
+              password="1111"
+              driverClassName="org.mariadb.jdbc.Driver"
+              factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+              url="jdbc:mariadb://bzu.co.kr:3306/kb?serverTimezone=UTC"
+    />
+
+    <!--auth :: 권한(내가 사용가능한지 권한여부), 인증(내가 맞는지 확은)-->
+    <!--Container :: 클래스명 지을때 웹개발자나, 프론트앤드 개발자가 ~~ :: 덩어리로 가져가라 -->
+    <!--username :: db 아이디-->
+    <!--라이브러리를 집어넣어야 ~~~driver 나옴-->
+    <!--factory :: 우물 누가 팜? 우물은 톰캣이 파줌-->
+    <!--url :: 마리아db 포트 3306-->
+    <!--오타 ㅠㅠ -->
+
+</Context>

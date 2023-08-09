@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    
+    <title>전환 (Transition) </title>
+</head>
+<style>
+
+
+p{
+    background-color: rgb(136, 255, 0);
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+
+    /* 트렌지션(css속성) :: 전환 
+       정해진 시간동안 요소의 속성값을 부드럽게 변화시키는 속성
+       => 이 속성을 통해서, 속성값에 따른 전환 효과를 주면서 지속시간도 설정가능*/
+
+        transition: width 1s, height 1s; 
+           /* 00초정도 너비(width), 높이(height)의 전환을 설정 */
+        
+            /* linear :: 규칙적인 속도로 전환을 수행 */
+            /* ease :: 전환의 처음과 끝을 천천히, 중간은 빠르게 수행 */
+            /* ease-in :: 천천히 시작해서 점차 빠르게 수행*/
+            /* ease-out :: 빠르게 시작해서 천천히 끝내며 수행 */
+            /* ease-in-out :: 천천히 시작, 천천히 끝내며 수행 */
+        transition-property: background-color;
+        transition-duration: 1s;
+          /* 4/26 */
+          /* 컬러와 시간을 인식 문제 :: property와 duration 
+            transition 속성이 같이 있으면 충돌 하는 듯*/
+
+        transition-delay: 3s; 
+        /* 전환 수행 전 지연시간을 설정 */
+        /* 수행 전과 후 모두 딜레이 되는 거 같은데~  */
+    }
+
+p#linear {    
+    transition-timing-function: linear;}
+
+p#ease { transition-timing-function: ease;}
+
+p#ease-in {transition-timing-function: ease-in;}
+
+p#ease-out {transition-timing-function: ease-out ;}
+
+p#ease-in-out {transition-timing-function: ease-in-out;}
+
+p:hover {
+    /* hover :: 마우스를 갖다대었을 때, 변경되는 스타일 정의 */
+    width: 300px;
+    height: 300px;
+    background-color: rgb(11, 246, 250);
+}
+
+    /* active :: 클릭하면 변경 */
+p#ease-in:active {  
+    width: 300px;
+    height: 300px;
+    background-color: rgb(208, 255, 0);
+}
+
+
+</style>
+
+<body>
+    <!-- 트렌지션(css속성) :: 전환 -->    
+    <p> 네모 </p>
+    <p id="linear"> linear </p>
+    <p id="ease"> ease</p>
+    <p id="ease-in"> ease-in</p>
+    <p id="ease-out"> ease-out </p>
+    <p id="ease-in-out"> ease-in-out </p>
+
+</body>
+</html>

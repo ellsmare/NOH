@@ -1,0 +1,54 @@
+/* homepage css */
+
+body {
+    background-image: url('https://img.pikbest.com/png-images/qianku/winter-winter-penguin-snowflake-background_2393690.png!bwr800')
+    
+}
+
+
+
+h2 {
+    width: 600px; 
+    background-color: rgba(255, 255, 255, 0.929);
+    border: 2px solid rgb(0, 77, 87);  
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    background-color: rgb(255, 255, 255);
+    margin-left: 30%;
+
+}
+
+form{    
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.906) ;
+    border: 2px solid rgb(0, 77, 87);
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+div {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+p#help {    
+    font-size: 12px;
+    color: darkgray;
+}
+
+input {
+    padding: 5px;
+}
+
+
+hr {
+    width: 40%;
+}
+

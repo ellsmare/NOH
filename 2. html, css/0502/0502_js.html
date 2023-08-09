@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--  
+    한 학생의 정보처리기사 시험의 점수에 대하여,
+    합격여부 확인
+
+    객체 생성 :: 
+    필드 :: 1~5과목 성적 (배열) + good
+    1~5과목 점수 모두 입력으로 받도록 함
+    good의 값은 0으로 초기화 
+
+    메소드 :: 
+    과락여부 subject_score(x) :: x값이 60점 이상 -> good 값에 1 더하기
+    총점 평균 :: sum() :: 평균이 80점 이상이면 -> good 값에 1 더하기
+-->
+
+    <script>
+    //
+        let good=[0,0,0,0,0]
+        good[0]=prompt("1과목 성적을 입력하세요");
+        good[1]=prompt("2과목 성적을 입력하세요");
+        good[2]=prompt("3과목 성적을 입력하세요");
+        good[3]=prompt("4과목 성적을 입력하세요");
+        good[4]=prompt("5과목 성적을 입력하세요");
+
+        let subject = {
+                
+            Score : function() {
+                //if(let i=0;i<5;i++){}
+                if(good>60){
+                    document.write(good);
+                }
+                else{
+                    document.write("과락입니다");
+                }               
+            
+            },
+
+            Good_Sum : function() {
+                if(sum>=80){
+                    
+                    document.write(good+1);
+                }
+            }
+
+        }
+
+        subject.Score();
+        document.write(good[0]);
+
+
+
+
+    </script>
+    
+</body>
+</html>

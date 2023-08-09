@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        margin: 5px;
+    }
+
+    button {
+        margin: 5px;
+    }
+</style>
+<body>
+    <!-- 
+    이벤트 연습
+    - 이름, 성별, 나이에 대햐여 입력받기
+    input태그 작성하고 거기에 입력하는 식으로 적용(prompt 금지)
+    (input태그에 id적용하여, js쪽으로 땡겨오는게 가능)
+
+    cf) 입력값 땡겨올 때, document.getElementById("id").value 사용 권장
+    )
+
+    - 버튼을 누르면 다음 이벤트를 수행하라
+    "입력 감사합니다" 라는 알림창 출력
+    버튼 아래로 선을 긋고 <hr>
+    입력한 이름, 성별, 나이를 순차적으로 출력하기 -->
+    
+        <label>이름 : </label>
+        <input type="text" id="name"> 
+        <br>
+        <label>성별 : </label>
+        <input type="text" id="gender">
+        <br>
+        <label>나이 : </label>
+        <input type="text" id="age">
+        <br>
+        
+        <button id="btt"> 전송 </button>    
+        <p id="text"></p> <!-- 결과값 출력될 공간     -->
+
+    <script>
+        // id가 btt인 요소를 변수 button으로 당겨오기
+        let button=document.getElementById("btt");
+        // 버튼을 클릭하면 warning 함수 수행
+        button.addEventListener("click", warning);
+       
+        // 수행해야 할 함수 명령문
+        function warning(){
+            // 1. "입력 감사합니다"
+            alert("입력 갑사합니다.");
+
+            // 2. 입력한 이름, 성별, 나이를 순차적으로 출력
+            let name=document.getElementById("name").value;
+            let gender=document.getElementById("gender").value;
+            let age=document.getElementById("age").value;     
+            // value를 넣지 않으면 다른 정보도 함께 출력      
+            // document.write("name"); 새로운 브라우저 창에 출력됨
+            
+            // 같은 창에 출력
+            document.getElementById("text").innerHTML=
+            `<hr>
+            이름 : ${name}<br>
+            성별 : ${gender}<br>
+            나이 : ${age}<br>`
+        }     
+
+    </script>
+</body>
+</html>

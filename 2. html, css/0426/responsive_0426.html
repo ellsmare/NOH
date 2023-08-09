@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- 반응형 웹 설계시 뷰 포트 명시된 meta 태그 포함시켜야 함 -->
+   <!-- 
+    viewport :: 브라우저 창의 크기
+    content :: width의 크기에 반응 -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <title>Document</title>
+</head>
+<style>
+    img {
+        /* width, height, max-width, min-width, max-height, min-height */
+        /* 이미지태그의 너비를 뷰포트의 70%만큼 차지 */
+        /* width: 70%;    */
+
+         /* 이미지태그의 너비를 뷰포트의 40%만큼 차지, 원본사진의 크기가 최소 */
+         /* min-width: 70%; */
+        
+        /* 이미지태그의 너비를 뷰포트의 50%만큼 차지, 원본사진의 크기가 최대 */
+        /* 반응형 웹에서는 min보다 max가 더 가시성이 좋다 */
+        max-width: 50%;       
+    }
+
+</style>
+<body>
+    <!-- <img src="https://as1.ftcdn.net/v2/jpg/02/46/94/12/1000_F_246941200_WhxS2rq9nUDK8o8kRlXxNHU09geaUqWr.jpg"></src> -->
+
+    <picture>
+        <!-- srcset속성 :: 이미지들을 2개 이상 명시하여 묶어놓는 속성 -->
+        <source srcset="https://news.chungbuk.go.kr/news/photo/202204/19630_13350_334.jpg"
+            media="(max-width:500px)" style="width: 800px; height: 400;" >
+        <source srcset="https://as1.ftcdn.net/v2/jpg/02/46/94/12/1000_F_246941200_WhxS2rq9nUDK8o8kRlXxNHU09geaUqWr.jpg"
+         style="width: 800px;">
+        
+        
+        <img src="https://as1.ftcdn.net/v2/jpg/02/46/94/12/1000_F_246941200_WhxS2rq9nUDK8o8kRlXxNHU09geaUqWr.jpg">
+    </picture>
+
+    <h1>화면을 줄여보세요</h1>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- 
+        입력문 통해, 아래 정보 입력받기(배열)
+        "이름을 입력하세요"
+        "나이를 입력하세요"
+        "여성이십니까? 맞다면, 확인을 눌러주시길 바랍니다."
+     -->
+
+     <!-- 
+        2030여성지원 과정에 참여할 수 있는 대상자인지 판단하는 함수 구현
+        대상자는 20대, 30대 여성
+      -->
+
+     <!-- 
+        사용자의 정보를 모두 출력하고, 대상자인지에 대한 여부 출력하기
+        이름 : ~
+        나이 : ~
+        성별 : ~
+
+        환영합니다!!
+        2030 여성지원 과정에 지원 가능하십니다!
+    -->    
+         <script>
+
+         // 배열선언
+         let intro=[];
+
+         //입력문 -for문
+         for(let i=0; i<3; i++){            //입력
+           switch(i){
+                case 0:
+                let input_name=prompt("이름을 입력하세요", "(ex)홍길동"); //이름입력
+                intro.push(input_name);
+                break;
+
+                case 1:
+                let input_age=prompt("나이를 입력하세요"); //나이입력
+                //형변환 Number 첫번째 글자 "대문자"
+                input_age=Number(input_age);
+                intro.push(input_age);
+                break;
+
+                default:
+                // boolean타입  
+                // input_gender값에 여성이면 true, 남성 false  
+                let input_gender=confirm("성별을 입력하세요", "(ex)여자, 남자"); //성별확인
+                intro.push(input_gender);
+             }
+         }
+        // 사용자 출력문
+        document.write("이름 : "+intro[0]+"<br>");
+        document.write("나이 : "+intro[1]+"<br>");
+        document.write("성별 : "+(intro[2]===true ? "여성" : "남성") +"<br><br>");
+        
+        if(pass(intro[1],intro[2])===true){
+            document.write("환영합니다!!<br>2030 여성지원 과정에 지원 가능하십니다!");
+        }
+        else {
+            document.write("대상자가 아닙니다.");
+        }
+                 
+        //함수구현
+            function pass(age, gender){     //함수 실행시, 나이와 성별의 정보를 받도록 한다
+                //20대, 30대 여성 
+                //age의 자료형 : number, gender의 자료형 : boolean 
+                if(age>=20 && age<40 && gender===true){
+                    return true;    // 대상자인 경우                        
+                    }
+                else {
+                    return false;   // 대상자가 아닌 경우
+                    }                
+                }                
+        </script>
+    
+</body>
+</html>

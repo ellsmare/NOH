@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        입력문 통해, 아래 정보 입력받기(배열)
+        "이름을 입력하세요"
+        "나이를 입력하세요"
+        "여성이십니까? 맞다면, 확인을 눌러주시길 바랍니다."
+     -->
+
+     <!-- 
+        2030여성지원 과정에 참여할 수 있는 대상자인지 판단하는 함수 구현
+        대상자는 20대, 30대 여성
+      -->
+
+     <!-- 
+        사용자의 정보를 모두 출력하고, 대상자인지에 대한 여부 출력하기
+        이름 : ~
+        나이 : ~
+        성별 : ~
+
+        환영합니다!!
+        2030 여성지원 과정에 지원 가능하십니다!
+    -->
+    <script>
+        // 입력문 -배열
+            let input_name=prompt("이름을 입력하세요")
+            let input_age=prompt("나이를 입력하세요")
+            let input_gender=prompt("성별을 입력하세요(여자, 남자)")
+
+            let intro=Array(input_name, input_age, input_gender);
+
+            let boolean=confirm("여성이십니까? 맞다면, 확인을 눌러주시길 바랍니다."); 
+
+            //출력문  
+            if(boolean===true){    
+                document.write(pass(input_age,input_gender));                   
+            } 
+            else {
+               document.write("대상자가 아닙니다.");
+                }
+            
+            //함수
+            function pass(input_age, input_gender){
+                if(input_age>=20 && input_age<40){
+                    document.write(intro+"<br><br>");
+                    document.write("환영합니다!!"+"<br>"+"2030 여성지원 과정에 지원 가능하십니다!");
+                }
+                else {
+                    document.write("대상자가 아닙니다.");
+                }                
+            }         
+
+    </script>
+</body>
+</html>

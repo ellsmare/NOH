@@ -1,0 +1,32 @@
+/* homepage css */
+
+body {
+    background-image: url('https://i.pinimg.com/736x/d0/99/52/d09952a502099c4bbd54bd17a8bbff29.jpg')
+    
+}
+
+h2 {
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+input {
+    padding: 5px;
+}
+
+

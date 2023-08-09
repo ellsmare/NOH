@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 객체 :: 미션 </title>
+</head>
+<body>
+    <!--  
+    한 학생의 정보처리기사 시험의 점수에 대하여,
+    합격여부 확인
+
+    객체 생성 :: 
+    필드 :: 1~5과목 성적 (배열) + good
+    1~5과목 점수 모두 입력으로 받도록 함
+    good의 값은 0으로 초기화 
+
+    메소드 :: 
+    과락여부 subject_score(x) :: x값이 60점 이상 -> good 값에 1 더하기
+    총점 평균 :: sum() :: 평균이 80점 이상이면 -> good 값에 1 더하기
+    -->
+    <script>
+        //객체생성 :: 각 과목 성적(배열), good변수
+        let data={ 
+            score: [], // score 필드가 배열인 것만 선언(값x)
+            good: 0,
+            
+            Print: function(){
+                for(let i=0; i<5;i++){
+                    document.write((i+1)+"과목점수: " +(this.score[i])+"<br>");
+                    //`${i+1}과목점수 : ${this.score[i]}<br>`
+                }
+                document.write("<br>");
+            },
+           
+           Sum: function(){
+                // 총 점수의 합계 
+                let sum=0;                
+                for(let i=0; i<5;i++){
+                    sum += this.score[i];
+                }
+                // 합계에 대해서 비교하기--> 총점평균
+                if(sum/5.0>=80){
+                    this.good++;
+                } 
+                document.write(`최종점수 : ${sum/5}`);
+            },
+            
+            Subject_score: function(sc) {
+                // sc값이 60점 이상이라면, good값에 1을 더한다
+                if(sc>=60){
+                    this.good++;
+                }
+            }
+    }
+
+        //for문을 통해 score 입력 받기
+        for(let i=0;i<5;i++){
+            data.score[i]=Number(prompt((i+1)+"과목 점수를 작성해주세요.")); 
+            // (`${i+1}과목 점수를 작성해주세요.`) 작성해도 된다 cf)리터럴 문자열
+        }
+
+        data.Print(); // 모든 점수 출력
+        // 합격여부 판단
+        for(let i=0;i<5;i++){
+            //반복문을 통해 data의 모든 score값에 대한 과락 여부
+            data.Subject_score(data.score[i]);
+        }
+        // 총점 메소드
+        data.Sum();
+              
+        document.write("<hr>");  
+       
+        if(data.good===6){
+        // 과락없고, 총점 80점 이상 === good값이 6일 때            
+            document.write("축하합니다. 합격입니다")    
+        }
+        else{
+            document.write("불합격입니다")    
+        }
+        
+        
+    </script>
+</body>
+</html>
