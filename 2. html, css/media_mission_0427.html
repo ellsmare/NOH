@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        border: 2px solid black;
+        background-color: white;       
+    } 
+
+    @media screen and (min-width:400px) {
+            p#id_1st {background-color:red;}
+    }
+    @media screen and (min-width:600px) {
+            p#id_2nd {background-color: orange;}
+    }
+    @media screen and (min-width:700px) {
+            p#id_3nd {background-color: yellow;}
+    }
+    @media screen and (min-width:900px) {
+            p#id_4th {background-color: green;}
+    }
+    @media screen and (min-width:1100px) {
+            p#id_5th  {background-color: blue;}
+    }
+    @media screen and (min-width:1300px) {
+            p {color: white;}
+    } 
+
+</style>
+<body>
+    <p id="id_1st"> 1st p태그 </p>
+    <p id="id_2nd"> 2nd p태그 </p>
+    <p id="id_3nd"> 3nd p태그 </p>
+    <p id="id_4th"> 4th p태그 </p>
+    <p id="id_5th"> 5th p태그 </p>   
+    
+</body>
+</html>
