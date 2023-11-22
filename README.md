@@ -29,11 +29,12 @@ ex) "(원) 객체입니다. (반지름) : 5" -입력받기 <br>
 </details>
 <br><br>
 
-<details>
-<summary><h3>html/css</h3></summary>
+<h3>html/css</h3>
 - 설치, 화면설정 등 <br>
 - head영역, body영 <br>
-- 태그 : 제목(h), p, style, a, table(th, td), 목록(ul, li, ol, dl, dt, dd) 등 <br>
+<details>
+<summary> 더보기 </summary>
+ - 태그 : 제목(h), p, style, a, table(th, td), 목록(ul, li, ol, dl, dt, dd) 등 <br>
 - 미션 : 자기소개 메인페이지 (배운 태그 활용)  <br>
 - 태그 : 비디오(video), 오디오(audio) <br>
 - 태그 : form, input, radio, checkbox  <br>
@@ -131,13 +132,14 @@ html태구 구성 :: 버튼 1개, 이미지 태그 1개, p 또는 div 태그 1�
 - branch <br>
 <br><br>
 
-<details>
-<summary><h3>파이썬 </h3></summary>
+<h3>파이썬 </h3>
 - 주피터 노트북, 아나콘다 설치<br>
 - 기본문법 : 리스트[], 튜플(), 딕셔너리{}, 리터럴, 멤버쉽 연산자<br>
 - 문자열 : replace(변경예정값, 변경값), strip(), setup(), 포매팅<br>
 - list 타입 : split(), join()<br>
 - def() 함수 사용자 정의 함수<br>
+<details>
+<summary> 더보기 </summary>
 - 미션 : 원하는 두 수를 입력받아서 몫과 나머지를 구하는 프로그래밍<br>
 - 미션 : 원하는 두 수를 입력 사칙연산 (+,-,*,/)<br>
 - 미션 : <br>
