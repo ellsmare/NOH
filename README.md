@@ -7,7 +7,7 @@
 - ​VMware  <br>
 - Packet Tracer(패킷 트레이서)  <br>
 - heidisql  <br>
-<hr> <br> <br>
+<br><br>
 
 <h3>자바</h3>
 - 설치, 환경변수 설정  <br>
@@ -27,7 +27,7 @@
 ex) "(원) 객체입니다. (반지름) : 5" -입력받기 <br>
     "이 원의 넓이는 : 78.5입니다."  -출력하기 <br>
 </details>
-<hr> <br> <br>
+<br> <hr> <br>
 
 <details>
 <summary><h3>html/css</h3></summary>
@@ -53,7 +53,7 @@ p태그이용 사각형 5개,  <br>
 뷰포트 너비에 따라 아래처럼 속성값이 바뀌게끔 하라 <br>
 (너비의 크기가 커짐에 따라 순차적으로 적용) - 예시사진제공 <br>
 </details>
-<hr> <br> <br>
+<br> <hr> <br>
 
 <h3>JavaScript</h3>
 - 화면의 간단한 동작 <br>
