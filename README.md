@@ -1,22 +1,21 @@
 <h2> AI·빅데이터 융합 웹개발자 과정 List </h2> <br><br>
 
-<details>
-<summary><h3>네트워크, 운영체제</h3></summary>
+<h3>네트워크, 운영체제</h3>
 - 네트워크시작하기, 프로토콜, IPv4 <br>
 - OSI 7 레이어, tcp/ip, 3웨이 핸드쉐이킹  <br>
 - 리눅스, 웹서버  <br>
 - ​VMware  <br>
 - Packet Tracer(패킷 트레이서)  <br>
 - heidisql  <br>
-</details>
 <hr> <br> <br>
 
-<details>
-<summary><h3>자바</h3></summary>
+<h3>자바</h3>
 - 설치, 환경변수 설정  <br>
 - 오류 : user 폴더 - eclipse-workspace - .metadata 삭제 <br>
 - 문법-상수, 변수, 반복문, 조건문, 객체, 클래스, 함수, 상수, 추상클래스 <br>
-- 미션 : 369게임 프로그램, 무한반복(100미만) 3, 6, 9 없으면 숫자 출력, 그외 '박수짝' <br>
+<details>
+<summary> 더보기 </summary>
+ - 미션 : 369게임 프로그램, 무한반복(100미만) 3, 6, 9 없으면 숫자 출력, 그외 '박수짝' <br>
 - 미션 : 백준 두 수 비교하기, 사분면 고르기, A+B(3), A+B(5), 팩토리, X보다 작은 수, 별찍기-1 <br>
 - 미션  <br>
  shape 클래스 생성 (추상클래스) - getSize() 넓이 반환하는 함수 <br>
@@ -56,12 +55,13 @@ p태그이용 사각형 5개,  <br>
 </details>
 <hr> <br> <br>
 
-<details>
-<summary><h3>JavaScript</h3></summary>
+<h3>JavaScript</h3>
 - 화면의 간단한 동작 <br>
 - 문법 : 자료형, 변수선언, 강제형변환, 조건문, 반복문, 배열, 객체, 이벤트 등 <br>
 - 알람창, 콘솔창, 홈페이지 입력, 출력 <br>
 - 태그연동해서 문장 변경하기 <br>
+<details>
+<summary> 더보기 </summary>
 - 미션 :  <br>
 입력문을 통해 아래 정보 입력받기(배열, 개인정보) <br>
 수업 참여 조건에 맞는 대상자 판한다는 함수만들기 (20대, 30대 여성) <br>
@@ -78,8 +78,7 @@ p태그이용 사각형 5개,  <br>
 </details>
 <hr> <br> <br>
 
-<details>
-<summary><h3> Ajax, Jquery </h3></summary>
+<h3> Ajax, Jquery </h3>
 - eclipse, 톰캣 설치 <br>
 - Ajax  :: 로딩없이 웹페이지 갱신, 서버와 데이터 교환이 가능한 라이브러리' <br>
            (Js 이벤트 동작 도와주는 라이브러리) <br>
@@ -88,7 +87,9 @@ p태그이용 사각형 5개,  <br>
 - XMLttpRequest 객채(xhr)  :: 콜백함수 onload, onprogress <br>
                               웹 서버와 "데이터 교환"에 사용 <br>
                               Js에는 생성자 존재 <br>
-- 미션 :  <br>
+<details>
+<summary> 더보기 </summary>
+ 미션 :  <br>
 아래는 저의 인적사항입니다  <br>
 [버튼위치]  <br>
 <<지금까지 수업했던 내용 불러옵니다.>>  <br>
@@ -123,13 +124,11 @@ html태구 구성 :: 버튼 1개, 이미지 태그 1개, p 또는 div 태그 1�
 </details>
 <hr> <br> <br>
 
-<details>
-<summary><h3>Github</h3></summary>
+<h3>Github</h3>
 - 이론수업 <br>
 - 회원가입, git bash 활용하기 <br>
 - pull 내려받기, commit & push 올리기 <br>
 - branch <br>
-</details>
 <hr> <br> <br>
 
 <details>
@@ -159,19 +158,17 @@ not은 부정적인 느낌 등<br>
 </details>
 <hr><br><br>
 
-<details>
-<summary><h3>게시판 만들기 - CRUD </h3></summary>
+<h3>게시판 만들기 - CRUD </h3>
 - JAVA
 - 스프링
 - 부트
 - docker, heidisql 활용
 - 데이타베이스 : mysql, mariaDB
 - IntelliJ IDEA
-</details>
 <hr><br><br>
 
 
-<h3>파이썬 </h3>
+<h3>파이썬2</h3>
 - 빅데이터 수업
 - flask
 - React 문법
