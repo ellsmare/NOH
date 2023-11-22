@@ -120,7 +120,7 @@ html태구 구성 :: 버튼 1개, 이미지 태그 1개, p 또는 div 태그 1�
 <hr> <br> <br>
 
 <details>
-<h3><summary>Github</summary></h3> <br>
+<summary>Github</summary>
 - 이론수업 <br>
 - 회원가입, git bash 활용하기 <br>
 - pull 내려받기, commit & push 올리기 <br>
