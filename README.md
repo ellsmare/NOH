@@ -1,11 +1,14 @@
-<h3>네트워크, 운영체제</h3>
+<h2> AI·빅데이터 융합 웹개발자 과정 List </h2> <br><br>
+
+<details>
+<summary><h3>네트워크, 운영체제</h3></summary>
 - 네트워크시작하기, 프로토콜, IPv4 <br>
 - OSI 7 레이어, tcp/ip, 3웨이 핸드쉐이킹  <br>
 - 리눅스, 웹서버  <br>
 - ​VMware  <br>
 - Packet Tracer(패킷 트레이서)  <br>
 - heidisql  <br>
-
+</details>
 <hr> <br> <br>
 
 <h3>자바</h3>
