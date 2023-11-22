@@ -27,7 +27,7 @@
 ex) "(원) 객체입니다. (반지름) : 5" -입력받기 <br>
     "이 원의 넓이는 : 78.5입니다."  -출력하기 <br>
 </details>
-<br> <hr> <br>
+<br><br>
 
 <details>
 <summary><h3>html/css</h3></summary>
@@ -53,7 +53,7 @@ p태그이용 사각형 5개,  <br>
 뷰포트 너비에 따라 아래처럼 속성값이 바뀌게끔 하라 <br>
 (너비의 크기가 커짐에 따라 순차적으로 적용) - 예시사진제공 <br>
 </details>
-<br> <hr> <br>
+<br><br>
 
 <h3>JavaScript</h3>
 - 화면의 간단한 동작 <br>
@@ -76,7 +76,7 @@ p태그이용 사각형 5개,  <br>
 - 미션 : 이름, 성별, 나이 입력받고(input태그 사용), 버튼을 누르면 다음 이벤트 수행하기 <br>
 ("입력 감사합니다" 알림창 출력, 버튼 아래 선 긋고, 입력한 이름, 성별, 나이 순차적으로 출력하기) <br>
 </details>
-<hr> <br> <br>
+<br><br>
 
 <h3> Ajax, Jquery </h3>
 - eclipse, 톰캣 설치 <br>
@@ -122,14 +122,14 @@ html태구 구성 :: 버튼 1개, 이미지 태그 1개, p 또는 div 태그 1�
 버튼 누르면, 이미지 태그와 p/div 태그의 텍스트 변경하기 <br>
 (바뀌는 이미지, 텍스트도 서버에서 가져오기, html 속성 x) <br>
 </details>
-<hr> <br> <br>
+<br><br>
 
 <h3>Github</h3>
 - 이론수업 <br>
 - 회원가입, git bash 활용하기 <br>
 - pull 내려받기, commit & push 올리기 <br>
 - branch <br>
-<hr> <br> <br>
+<br><br>
 
 <details>
 <summary><h3>파이썬 </h3></summary>
@@ -156,7 +156,7 @@ not은 부정적인 느낌 등<br>
 로그인이 중요 인증을 1번 성공하면 break<br>
 - 과제 (라이브러리 써서 작성, 제출하기) <br>
 </details>
-<hr><br><br>
+<br><br>
 
 <h3>게시판 만들기 - CRUD </h3>
 - JAVA
@@ -165,7 +165,7 @@ not은 부정적인 느낌 등<br>
 - docker, heidisql 활용
 - 데이타베이스 : mysql, mariaDB
 - IntelliJ IDEA
-<hr><br><br>
+<br><br>
 
 
 <h3>파이썬2</h3>
