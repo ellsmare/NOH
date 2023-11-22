@@ -161,16 +161,15 @@ not은 부정적인 느낌 등<br>
 <br><br>
 
 <h3>게시판 만들기 - CRUD </h3>
-- JAVA
-- 스프링
-- 부트
-- docker, heidisql 활용
-- 데이타베이스 : mysql, mariaDB
-- IntelliJ IDEA
+- JAVA<br>
+- 스프링<br>
+- 부트<br>
+- docker, heidisql 활용<br>
+- 데이타베이스 : mysql, mariaDB<br>
+- IntelliJ IDEA<br>
 <br><br>
 
-
 <h3>파이썬2</h3>
-- 빅데이터 수업
-- flask
-- React 문법
+- 빅데이터 수업<br>
+- flask<br>
+- React 문법<br>
