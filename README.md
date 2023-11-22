@@ -28,7 +28,6 @@
 ex) "(원) 객체입니다. (반지름) : 5" -입력받기 <br>
     "이 원의 넓이는 : 78.5입니다."  -출력하기 <br>
 </details>
-
 <hr> <br> <br>
 
 <details>
@@ -56,7 +55,6 @@ p태그이용 사각형 5개,  <br>
 (너비의 크기가 커짐에 따라 순차적으로 적용) - 예시사진제공 <br>
 </details>
 <hr> <br> <br>
-
 
 <details>
 <summary><h3>JavaScript</h3></summary>
@@ -132,9 +130,7 @@ html태구 구성 :: 버튼 1개, 이미지 태그 1개, p 또는 div 태그 1�
 - pull 내려받기, commit & push 올리기 <br>
 - branch <br>
 </details>
-
 <hr> <br> <br>
-
 
 <details>
 <summary><h3>파이썬 </h3></summary>
@@ -161,7 +157,6 @@ not은 부정적인 느낌 등<br>
 로그인이 중요 인증을 1번 성공하면 break<br>
 - 과제 (라이브러리 써서 작성, 제출하기) <br>
 </details>
-
 <hr><br><br>
 
 <details>
@@ -173,7 +168,6 @@ not은 부정적인 느낌 등<br>
 - 데이타베이스 : mysql, mariaDB
 - IntelliJ IDEA
 </details>
-
 <hr><br><br>
 
 
